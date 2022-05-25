@@ -88,12 +88,15 @@
             <a href="#pricing" class="btn btn-secondary btn-lg">But Now</a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
-            <img
+            <span class="tt" data-bs-placement="bottom" title="Net Ninja Book COVER">
+              <img
               class="img-fluid"
               src="/assets/ebook-cover.png"
               alt="ebook cover"
             />
           </div>
+            </span>
+            
         </div>
       </div>
     </section>
@@ -502,6 +505,12 @@
                   class="form-control"
                   placeholder="e.g. mario@example.com"
                 />
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Enter an address we can reply to.">
+                  <i class="bi bi-question-circle text-secondary text-muted"></i>
+                  </span>
+                </span>
               </div>
 
               <!-- name input -->
@@ -517,6 +526,12 @@
                   class="form-control"
                   placeholder="e.g. Mario"
                 />
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Enter your name.">
+                  <i class="bi bi-question-circle text-secondary text-muted"></i>
+                  </span>
+                </span>
               </div>
 
               <!-- select feild -->
@@ -560,5 +575,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltips = document.querySelectorAll('.tt');
+      tooltips.forEach(t => {
+        new bootstrap.tootip(t);
+      });
+    </script>
   </body>
 </html>
