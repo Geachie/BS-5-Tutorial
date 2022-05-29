@@ -1,0 +1,22 @@
+{
+  "name": "bs-5-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geachie/BS-5-Tutorial.git"
+  },
+  "author": "Paul McGeachie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geachie/BS-5-Tutorial/issues"
+  },
+  "homepage": "https://github.com/Geachie/BS-5-Tutorial#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
